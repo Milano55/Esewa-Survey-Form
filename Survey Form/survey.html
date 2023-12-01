@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Esewa Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform! </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" name="name" type="text" required placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input id="email" name="email" type="email" required placeholder="Enter your email" required /></label>
+        <label id="number-label">Age <input id="number" name="age" type="number" min="10" max="120" required placeholder="Age" required /></label>
+        <label for= "dropdown">Which option best describes your current role? 
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Job</option>
+            <option value="3">Other</option>
+            </select>
+            </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend Esewa to a friend?</legend>
+        <label for="yes"><input id="yes" type="radio" name="recommend-type" value="yes" class="inline" checked /> Yes</label>
+        <label for="no"><input id="no" type="radio" name="recommend-type" value="no" class="inline" /> No</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved?</legend>
+        <label for="payment">
+          <input class="inline" id="payment" type="checkbox" required name="payment" value="payment" /> Payment service
+       </label>
+       <label for="scan">
+        <input class="inline" id="scan" type="checkbox" required name="scan" value="scan" /> Scan & Pay
+       </label>
+       <label for="ui">
+        <input class="inline" id="ui" type="checkbox" required name="ui" value="ui" /> UI/UX
+       </label>
+      </fieldset>
+      <fieldset>
+       <label for="comment">Any comments or suggestions?
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Write your comments here..."></textarea>
+       </label>
+      </fieldset>
+           <button type="submit" id="submit" value="Submit" >Submit</button>
+    </form>
+  </body>
+</html>
